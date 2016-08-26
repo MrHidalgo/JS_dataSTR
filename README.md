@@ -1,8 +1,8 @@
 JavaScript  Data Structure
 
-_1. Stack;_
-_2. Queue_
-_3. Single List;_
+1. Stack;
+2. Queue;
+3. Single List;
 
 Create docs:
 
