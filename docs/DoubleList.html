@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Class: Queue</title>
+    <title>JSDoc: Class: DoubleList</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Class: Queue</h1>
+    <h1 class="page-title">Class: DoubleList</h1>
 
     
 
@@ -28,7 +28,7 @@
 
 <header>
     
-        <h2>Queue</h2>
+        <h2>DoubleList</h2>
         
     
 </header>
@@ -40,7 +40,7 @@
 
     
 
-    <h4 class="name" id="Queue"><span class="type-signature"></span>new Queue<span class="signature">()</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="DoubleList"><span class="type-signature"></span>new DoubleList<span class="signature">()</span><span class="type-signature"></span></h4>
 
     
 
@@ -87,7 +87,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="queue.js.html">queue.js</a>, <a href="queue.js.html#line5">line 5</a>
+        <a href="doubleList.js.html">doubleList.js</a>, <a href="doubleList.js.html#line16">line 16</a>
     </li></ul></dd>
     
 
@@ -136,119 +136,11 @@
 
     
 
-    <h4 class="name" id="dequeue"><span class="type-signature"></span>dequeue<span class="signature">()</span><span class="type-signature"> &rarr; {*}</span></h4>
+    <h4 class="name" id="add"><span class="type-signature"></span>add<span class="signature">(value)</span><span class="type-signature"> &rarr; {<a href="Node.html">Node</a>}</span></h4>
 
     
 
 
-
-<div class="description">
-    Deletes the oldest data from the queue.
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="queue.js.html">queue.js</a>, <a href="queue.js.html#line36">line 36</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    Return the data just deleted.
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">*</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-        
-            
-
-    
-
-    <h4 class="name" id="enqueue"><span class="type-signature"></span>enqueue<span class="signature">(data)</span><span class="type-signature"></span></h4>
-
-    
-
-
-
-<div class="description">
-    Adds items to the queue.
-</div>
 
 
 
@@ -283,15 +175,10 @@
 
         <tr>
             
-                <td class="name"><code>data</code></td>
+                <td class="name"><code>value</code></td>
             
 
             <td class="type">
-            
-                
-<span class="param-type">*</span>
-
-
             
             </td>
 
@@ -299,7 +186,7 @@
 
             
 
-            <td class="description last">_storage</td>
+            <td class="description last"></td>
         </tr>
 
     
@@ -340,7 +227,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="queue.js.html">queue.js</a>, <a href="queue.js.html#line25">line 25</a>
+        <a href="doubleList.js.html">doubleList.js</a>, <a href="doubleList.js.html#line27">line 27</a>
     </li></ul></dd>
     
 
@@ -363,6 +250,24 @@
 
 
 
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Node.html">Node</a></span>
+
+
+    </dd>
+</dl>
+
+    
 
 
 
@@ -371,15 +276,12 @@
 
     
 
-    <h4 class="name" id="size"><span class="type-signature"></span>size<span class="signature">()</span><span class="type-signature"> &rarr; {number}</span></h4>
+    <h4 class="name" id="remove"><span class="type-signature"></span>remove<span class="signature">(position)</span><span class="type-signature"> &rarr; {string}</span></h4>
 
     
 
 
 
-<div class="description">
-    Returns invalid queue size and maintain the correct range for the line keys.
-</div>
 
 
 
@@ -387,6 +289,49 @@
 
 
 
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>position</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
 
 
 
@@ -422,7 +367,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="queue.js.html">queue.js</a>, <a href="queue.js.html#line16">line 16</a>
+        <a href="doubleList.js.html">doubleList.js</a>, <a href="doubleList.js.html#line49">line 49</a>
     </li></ul></dd>
     
 
@@ -456,7 +401,153 @@
     </dt>
     <dd>
         
-<span class="param-type">number</span>
+<span class="param-type">string</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="searchNode"><span class="type-signature"></span>searchNode<span class="signature">(position)</span><span class="type-signature"> &rarr; {<a href="Node.html">Node</a>|*|null}</span></h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>position</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="doubleList.js.html">doubleList.js</a>, <a href="doubleList.js.html#line102">line 102</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Node.html">Node</a></span>
+|
+
+<span class="param-type">*</span>
+|
+
+<span class="param-type">null</span>
 
 
     </dd>
